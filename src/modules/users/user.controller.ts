@@ -11,6 +11,8 @@ import {
 export class UsersController {
   @Get('users')
   getAllUsers(@Response() res) {
+    console.log(res);
+
     res.status(HttpStatus.OK).json([{ id: 1, name: 'Test' }]);
   }
 
